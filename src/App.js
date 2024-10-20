@@ -4,7 +4,7 @@ import Dashboard from './components/dashboard';
 
 function App() {
   return (
-    <div className="min-w-[100%] bg-red-400">
+    <div className="min-w-[100%] bg-[#FAFBFF]">
       <Dashboard />
     </div>
   );
