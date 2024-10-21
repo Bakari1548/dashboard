@@ -13,7 +13,7 @@ import { BsPerson } from 'react-icons/bs';
 const Aside = () => {
     const toggleAside = () => {
         const aside = document.querySelector('.side')
-        const titre1 = document.querySelector('.titre1')
+        const titre = document.querySelector('.titre')
         const h3titre1 = document.querySelector('.h3titre1')
         const h3titre2 = document.querySelector('.h3titre2')
         const h3titre3 = document.querySelector('.h3titre3')
@@ -30,7 +30,15 @@ const Aside = () => {
         const chevron6 = document.getElementById('chevron6')
         const chevron7 = document.getElementById('chevron7')
 
-        titre1.classList.toggle('md:-left-64')
+        titre.classList.toggle('md:left-1')
+        h3titre1.classList.toggle('md:left-20')
+        h3titre2.classList.toggle('md:left-20')
+        h3titre3.classList.toggle('md:left-20')
+        h3titre4.classList.toggle('md:left-20')
+        h3titre5.classList.toggle('md:left-20')
+        h3titre6.classList.toggle('md:left-20')
+        h3titre7.classList.toggle('md:left-20')
+
         h3titre1.classList.toggle('md:-left-[96px]')
         h3titre2.classList.toggle('md:-left-[96px]')
         h3titre3.classList.toggle('md:-left-[96px]')
@@ -39,6 +47,15 @@ const Aside = () => {
         h3titre6.classList.toggle('md:-left-[96px]')
         h3titre7.classList.toggle('md:-left-[96px]')
 
+        
+        chevron1.classList.toggle('md:left-44')
+        chevron2.classList.toggle('md:left-44')
+        chevron3.classList.toggle('md:left-44')
+        chevron4.classList.toggle('md:left-44')
+        chevron5.classList.toggle('md:left-44')
+        chevron6.classList.toggle('md:left-44')
+        chevron7.classList.toggle('md:left-44')
+
         chevron1.classList.toggle('md:-left-[128px]')
         chevron2.classList.toggle('md:-left-[128px]')
         chevron3.classList.toggle('md:-left-[128px]')
@@ -46,8 +63,9 @@ const Aside = () => {
         chevron5.classList.toggle('md:-left-[128px]')
         chevron6.classList.toggle('md:-left-[128px]')
         chevron7.classList.toggle('md:-left-[128px]')
-        
         aside.classList.toggle('md:w-[100px]')
+
+        aside.classList.toggle('md:w-[250px]')
         // aside.classList.toggle('duration-500')
     }
 
@@ -58,12 +76,12 @@ const Aside = () => {
             </button>
             <ul className='side md:w-[250px] w-[100px] bg-white sticky left-0 top-0 shadow-md duration-500 h-[100%] py-6 flex flex-col px-8 gap-6 z-40'>
                 <li className='relative top-0 left-0 flex gap-2 mb-8 z-30'>
-                    <h1 className='titre1 absolute md:left-1 -left-64 text-2xl font-bold duration-500 ml-10 text-black'>Dashboard<span className='text-xs font-normal mx-1.5 text-black'>v.01</span></h1>
+                    <h1 className='titre absolute md:left-1 -left-64 text-2xl font-bold duration-500 ml-10 text-black'>Dashboard<span className='text-xs font-normal mx-1.5 text-black'>v.01</span></h1>
                 </li>
                 <li className='flex gap-2 justify-between hover:bg-[#5932EA] duration-500 py-1.5 -my-2 px-2 rounded-lg z-30'>
                     <div className='flex flex-row gap-3'>
                         <PiKeyLight className='border border-[#9197B3] rounded-md text-xl hover:text-white font-semibold text-[#9197B3] py-[1px] my-[2.5px]' />
-                        <h3 className='h3titre1 absolute md:left-[80px] -left-[96px] text-base font-semibold text-[#9197B3] py-[0px] hover:text-white duration-500'>Dashboard</h3>
+                        <h3 className='h3titre1 absolute md:left-20 -left-[96px] text-base font-semibold text-[#9197B3] py-[0px] hover:text-white duration-500'>Dashboard</h3>
                     </div>
                     <a href='#'className='mt-[12px] duration-500 absolute md:left-44 -left-[128px]' id='chevron1'><FaChevronRight className='a -mt-2 text-[#9197B3] hover:text-white' /></a>
                 </li>
